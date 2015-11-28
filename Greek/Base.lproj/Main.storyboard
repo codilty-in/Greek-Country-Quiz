@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Greek" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter The Greek Word" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Wx-wx-7Bb">
+                                <rect key="frame" x="20" y="142" width="560" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                <connections>
+                                    <action selector="returnFirstResponder" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="JTH-n3-PSv"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Word We're Looking For Is:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EgX-I8-O2v">
+                                <rect key="frame" x="20" y="76" width="278" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="hlc-Au-ZdQ"/>
+                                    <constraint firstAttribute="width" constant="278" id="z8e-z3-Swh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Δανία" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dZc-7L-bLy">
+                                <rect key="frame" x="448" y="76" width="132" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="gIk-yY-jB9"/>
+                                    <constraint firstAttribute="width" constant="132" id="rtT-lE-zf1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zPl-AT-gNN">
+                                <rect key="frame" x="20" y="189" width="45" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="JJj-7S-Iq0"/>
+                                    <constraint firstAttribute="height" constant="21" id="dSP-G5-sKL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AZg-FS-mMK">
+                                <rect key="frame" x="20" y="225" width="25" height="47"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wrong" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bFp-Be-tgy">
+                                <rect key="frame" x="529" y="189" width="51" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iiD-v2-ZpS">
+                                <rect key="frame" x="555" y="225" width="25" height="47"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THE WORD IS WRONG. CORRECT ANSWER: " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LgG-Dc-We8">
+                                <rect key="frame" x="20" y="273" width="560" height="42"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="1qh-eT-XLy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmS-fp-5hp">
+                                <rect key="frame" x="266" y="348" width="69" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Hit Me Up"/>
+                                <connections>
+                                    <action selector="nextGuess:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HZd-Ty-bIg"/>
+                                    <action selector="returnFirstResponder" destination="BYZ-38-t0r" eventType="touchUpInside" id="LkS-LG-CTs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lmS-fp-5hp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="03Z-zM-O5l"/>
+                            <constraint firstItem="zPl-AT-gNN" firstAttribute="top" secondItem="1Wx-wx-7Bb" secondAttribute="bottom" constant="17" id="4ng-3r-Rza"/>
+                            <constraint firstItem="zPl-AT-gNN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="8J2-tl-q7q"/>
+                            <constraint firstItem="iiD-v2-ZpS" firstAttribute="top" secondItem="bFp-Be-tgy" secondAttribute="bottom" constant="15" id="CRY-9Y-UTO"/>
+                            <constraint firstItem="LgG-Dc-We8" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="J6M-CW-8Hl"/>
+                            <constraint firstItem="1Wx-wx-7Bb" firstAttribute="top" secondItem="dZc-7L-bLy" secondAttribute="bottom" constant="45" id="MwN-xw-wlc"/>
+                            <constraint firstItem="dZc-7L-bLy" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="NBJ-65-u8B"/>
+                            <constraint firstItem="1Wx-wx-7Bb" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="UFf-I9-LaX"/>
+                            <constraint firstItem="AZg-FS-mMK" firstAttribute="top" secondItem="zPl-AT-gNN" secondAttribute="bottom" constant="15" id="UgO-y1-CaO"/>
+                            <constraint firstItem="dZc-7L-bLy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="56" id="V9J-Vm-pm4"/>
+                            <constraint firstItem="1Wx-wx-7Bb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="VgH-4M-T8f"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iiD-v2-ZpS" secondAttribute="trailing" id="Z1t-3g-ijz"/>
+                            <constraint firstItem="bFp-Be-tgy" firstAttribute="top" secondItem="1Wx-wx-7Bb" secondAttribute="bottom" constant="17" id="ZEw-XI-1rg"/>
+                            <constraint firstItem="AZg-FS-mMK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="a9j-9C-Kgc"/>
+                            <constraint firstItem="LgG-Dc-We8" firstAttribute="top" secondItem="iiD-v2-ZpS" secondAttribute="bottom" constant="1" id="bbf-qs-i1c"/>
+                            <constraint firstItem="EgX-I8-O2v" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="mv0-nC-OSe"/>
+                            <constraint firstItem="bFp-Be-tgy" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="shY-mA-J4Y"/>
+                            <constraint firstItem="LgG-Dc-We8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="so5-hu-heW"/>
+                            <constraint firstItem="AZg-FS-mMK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="wBC-B7-Scb"/>
+                            <constraint firstItem="lmS-fp-5hp" firstAttribute="top" secondItem="LgG-Dc-We8" secondAttribute="bottom" constant="33" id="yII-la-2YD"/>
+                            <constraint firstItem="EgX-I8-O2v" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="56" id="zlv-D2-Bye"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="correctedLabel" destination="LgG-Dc-We8" id="4js-rX-xWe"/>
+                        <outlet property="inputfield" destination="1Wx-wx-7Bb" id="NqJ-3z-25H"/>
+                        <outlet property="scoreLabel" destination="AZg-FS-mMK" id="r1C-uH-akt"/>
+                        <outlet property="toBeFound" destination="dZc-7L-bLy" id="aKQ-JU-4wm"/>
+                        <outlet property="wrongLabel" destination="iiD-v2-ZpS" id="jKF-GG-QTJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="382" y="38"/>
+        </scene>
+    </scenes>
+</document>
